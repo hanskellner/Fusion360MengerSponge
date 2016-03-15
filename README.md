@@ -2,8 +2,8 @@
 
 This script is used for generating Menger Sponges in [Autodesk Fusion 360](http://fusion360.autodesk.com/).
 
-![Image of Menger Sponge Sample](./resources/MengerSponge.png)
-Level 1 (3x3x3) Menger Sponge
+![Image of Menger Sponge Sample](./resources/MengerSponge_9x9x9.png)
+Level 2 (9x9x9) Menger Sponge
 
 ## Installation
 
@@ -26,6 +26,14 @@ Copy the "Fusion360MengerSponge" folder into your Fusion 360 "My Scripts" folder
 
 The script should be ready to run.
 
+## Performance (important unless you have hours to wait)
+
+> This script will create many bodies and the operations to do so will be recorded in the design history.  It's recommended that the "Capture Design History" option be turned off:
+> 
+> ![Capture design history menu](./resources/CaptureDesignHistoryMenu.png)
+>
+> The implementation is also in JavaScript which incurs an additional overhead.  A Python implementation is in the plan...
+
 ## Usage
 
 1. Run the "MengerSponge" script from the Script Manager
@@ -40,4 +48,7 @@ The script should be ready to run.
 
 ## Issues
 
-- Fusion 360 isn't happy about very large levels and will lock up.
+- Fusion 360 isn't happy about very large levels and will lock up.  See the "Performance" section above.
+
+![Image of Menger Sponge Sample](./resources/MengerSponge.png)
+Level 1 (3x3x3) Menger Sponge
