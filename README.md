@@ -28,11 +28,11 @@ The script should be ready to run.
 
 ## Performance (important unless you have hours to wait)
 
-> This script will create many bodies and the operations to do so will be recorded in the design history.  It's recommended that the "Capture Design History" option be turned off:
-> 
-> ![Capture design history menu](./resources/CaptureDesignHistoryMenu.png)
->
-> The implementation is also in JavaScript which incurs an additional overhead.  A Python implementation is in the plan...
+This script will create many bodies and the operations to do so will be recorded in the design history.  It's recommended that the "Capture Design History" option be turned off:
+ 
+![Capture design history menu](./resources/CaptureDesignHistoryMenu.png)
+
+The implementation is also in JavaScript which incurs an additional overhead.  A Python implementation is in the plan...
 
 ## Usage
 
@@ -42,12 +42,13 @@ The script should be ready to run.
   ![Image of Menger Sponge Settings](./resources/MengerSpongeDialog.png)
 
   - Levels: Number of levels to generate.
-  - Cell Component: If selected, clone this component for each of the cells.
+  - Cell Component: If selected, clone this component for each of the cells. (Work-in-progress)
   - Cell Length: The size of each cell.
 3. Click OK to generate the model
 
 ## Issues
 
+- "Cell Component" doesn't yet work.
 - Fusion 360 isn't happy about very large levels and will lock up.  See the "Performance" section above.
 
 ![Image of Menger Sponge Sample](./resources/MengerSponge.png)
